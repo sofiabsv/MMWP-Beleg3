@@ -1,34 +1,262 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Reveal.js Presentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Semantic Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css"
+      id="theme"
+    />
+  </head>
+  <body>
     <div class="reveal">
-        <div class="slides">
-            <section>
-                <h1>Welcome to Reveal.js</h1>
-                <p>This is a simple presentation.</p>
-            </section>
-            <section>
-                <h2>Slide 2</h2>
-                <p>Content for the second slide.</p>
-            </section>
-            <section>
-                <h2>Slide 3</h2>
-                <p>Content for the third slide.</p>
-            </section>
-        </div>
+      <div class="slides">
+        <section>
+          <h1>Semantic Web</h1>
+          <p>Sofia Berdichevska, Franca Lenz, Max Kohla</p>
+        </section>
+        <section>
+          <section>
+            <h2>Was ist Sematic Web?</h2>
+          </section>
+          <section>
+            <ul>
+              <li>Technoglogie, welche Daten Maschinenlesbarer macht</li>
+              <li>Fokussiert auf Bedeutung von Daten, für bessere Struktur</li>
+              <li>
+                Verknüpfung und Integration von Daten aus verschiedenen Quellen
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Ziele des Semantic Web</h3>
+            <ul>
+              <li>
+                Verknüpfung und Austausch von Informationen zwischen Systemen.
+              </li>
+              <li>
+                Verbesserte Interoperabilität: Plattformübergreifende
+                Datenintegration.
+              </li>
+              <li>
+                Automatisierte Entscheidungsfindung: Unterstützung von
+                Anwendungen wie KI und personalisierten Diensten.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Technologien des Semantic Web</h2>
+          </section>
+          <section>
+            <h4>RDF (Resource Description Framework)</h4>
+            <ul>
+              <li>Informationen im Web klar und verständlich darstellen</li>
+              <li>
+                in Form von Subjekt (wer/was), Prädikat (was wird gesagt) und
+                Objekt (was genau) - Tripel gespeichert
+              </li>
+              <p>
+                Beispiel: „Das Gemälde (Subjekt) wurde gemalt von (Prädikat)
+                Vincent Van Gogh (Objekt)“
+              </p>
+              <li>
+                verbindet verschiedene Daten im Web und macht sie für Maschinen
+                lesbar
+              </li>
+              <li>
+                Vorteil: flexibel, kann mit verschiedenen Datentypen & Formaten
+                erweitert werden
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>OWL (Web Ontology Language)</h4>
+            <ul>
+              <li>
+                ermöglicht Erstellung von Ontologien (Modellen) die Begriffe und
+                deren Beziehungen definieren
+              </li>
+              <li>legt genau fest was ein Begriff bedeutet (z.B „Gemälde“)</li>
+              <li>
+                beschreibt wie Begriffe miteinander verbunden sind (z.B
+                "Gemälde" und Künstler“)
+              </li>
+              <li>
+                hilft Bedeutung und Semantik von Web-Inhalten besser zu
+                verstehen
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>SPARQL (SPARQL Protocol and RDF Query Language)</h4>
+            <ul>
+              <li>Abfragesprache des Semantic Web</li>
+              <li>ermöglicht spezifische Fragen an RDF-Daten zu stellen</li>
+              <li>traditionelle Suchanfragen basieren auf Schlüsselwörtern</li>
+              <li>
+                SPARQL berücksichtigt Bedeutung und Kontext von Daten -
+                intelligente Suchanfragen
+              </li>
+              <li>
+                vielseite Abfragen (z.B Informationen über den Stil und die
+                Epoche eines Gemäldes)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Rule Interchange Format (RIF)</h4>
+            <ul>
+              <li>
+                Standard, der Regeln zwischen verschiedenen Regelsprachen
+                übersetzt
+              </li>
+              <li>
+                Regeln - „WENN … DANN …“-Anweisungen mit denen Computer logische
+                Schlüsse ziehen (z. B. „Wenn A ein Bruder ist, dann ist B die
+                Schwester“).
+              </li>
+              <li>
+                RIF ermöglicht Regeln in verschiedene formale Sprachen zu
+                übertragen, um sie universell nutzbar zu machen
+              </li>
+              <li>
+                verschiedene Dialekte, z. B. RIF-BLD (für Logikregeln) und
+                RIF-PRD (für Produktionsregeln)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>JSON-LD (JSON for Linking Data)</h4>
+            <ul>
+              <li>Erweiterung von JSON, um verknüpfte Daten darzustellen</li>
+              <li>
+                fügt Bedeutung zu Daten hinzu ("Name: Max" wird zu "Person heißt
+                Max")
+              </li>
+              <li>macht Webdienste verständlicher für Maschinen</li>
+              <li>häufig in APIs und Webseiten genutzt</li>
+            </ul>
+          </section>
+          <section>
+            <h4>SHACL (Shapes Constraint Language)</h4>
+            <ul>
+              <li>
+                Sprache, um Regeln für die Validierung von RDF-Daten zu
+                definieren
+              </li>
+              <li>
+                überprüft, ob RDF-Daten bestimmten Anforderungen (sogenannten
+                "Shapes") entsprechen
+              </li>
+              <li>
+                hilft sicherzustellen, dass Daten korrekt strukturiert und
+                sinnvoll nutzbar sind (in Datenbanken/Ontologien)
+              </li>
+              <li>
+                verwendet um Qualität von Linked Data zu sichern &
+                sicherzustellen, dass Systeme konsistente Daten verarbeiten
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Beispiele</h2>
+          </section>
+          <section>
+            <h3>DBpedia</h3>
+            <p>
+              Eine semantische Datenbank, die Wikipedia-Inhalte strukturiert und
+              verknüpft.
+            </p>
+          </section>
+          <section>
+            <h3>Google Knowledge Graph</h3>
+            <p>
+              Semantischen Technologien, die Daten aus verschiedenen Quellen (z.
+              B. Wikipedia, Musikdatenbanken) verknüpfen
+            </p>
+            <p>
+              Wenn man nach „Taylor Swift“ sucht, zeigt Google eine Infobox mit
+              biografischen Informationen, Alben, Tourdaten und verwandten
+              Künstlern
+            </p>
+          </section>
+          <section>
+            <h3>Schema.org</h3>
+            <p>
+              Gemeinsame Initiative von Google, Bing und anderen, um
+              strukturierte Daten für Suchmaschinen zu standardisieren.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Zukunftstaussicht</h2>
+          </section>
+          <section>
+            <h3>Weiterentwicklung der Standards</h3>
+            <p>W3C arbeitet kontinuierlich an neuen Tools und Sprachen.</p>
+          </section>
+          <section>
+            <h3>Mögliche Szenarien</h3>
+            <ul>
+              <li>
+                Assistenten, die basierend auf semantischen Daten alltägliche
+                Aufgaben übernehmen.
+              </li>
+              <li>
+                Personalisierte Dienste, die auf den Interessen und Vorlieben
+                des Nutzers basieren.
+              </li>
+              <li>
+                Automatisierte Entscheidungsfindung in der Medizin, Finanzwesen,
+                etc.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Quellen</h2>
+          </section>
+          <section>
+            <a href="https://www.impulsphase.de/wiki/semantic-web"
+              >https://www.impulsphase.de/wiki/semantic-web</a
+            >
+            <a href="https://de.wikipedia.org/wiki/JSON-LD"
+              >https://de.wikipedia.org/wiki/JSON-LD</a
+            >
+            <a href="https://de.wikipedia.org/wiki/Rule_Interchange_Format"
+              >https://de.wikipedia.org/wiki/Rule_Interchange_Format</a
+            >
+            <a href="https://www.w3.org/TR/shacl/"
+              >https://www.w3.org/TR/shacl/</a
+            >
+          </section>
+        </section>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
     <script>
-        Reveal.initialize();
+      Reveal.initialize();
     </script>
-</body>
+  </body>
 </html>
